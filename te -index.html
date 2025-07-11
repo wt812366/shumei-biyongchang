@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>  
+  <meta charset="UTF-8" />
+  <title>特朗普与拜登合照</title>
+  <style>
+    body {
+      text-align: center;      font-family: Arial, sans-serif;
+    }
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+    .marker {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      border-radius: 50%;
+      border: 2px solid white;
+      cursor: pointer;
+    }
+    .tooltip {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.75);
+      color: white;
+      padding: 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+      display: none;
+      font-size: 14px;
+    }
+    .marker:hover + .tooltip {
+      display: block;
+    }
+  </style>
+</head>
+<body> 
+  <h2>点击红点查看人物信息</h2>
+  <div class="image-container">
+    <!-- 特朗普与拜登合照.jpg -->
+    <img src="特朗普与拜登合照.jpg" alt="人物合影" width="1000" />
+    <!-- 标记点1：特朗普 -->
+    <a href="page-te.html"class="marker"style="top:150px;left:750px;"></a>
+        <div class="tooltip" style="top: 170px; left: 780px;">特朗普</div>
+    <!-- 标记点2：拜登 -->    
+    <a href="page-bai.html"class="marker"style="top:150px;left:200px;"></a>
+        <div class="tooltip" style="top: 170px; left: 230px;">拜登</div>
+   <!-- 你可以继续添加更多人物 -->
+<!-- 文字说明区域 -->
+   <div class="description-area">
+  <p>本合影拍摄于 <strong>2018年7月</strong> 俄美国家领导人会晤</p >
+  </div>
+</body>
+</html>
